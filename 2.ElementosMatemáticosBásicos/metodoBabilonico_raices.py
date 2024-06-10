@@ -11,11 +11,12 @@ para formato
 @author: Roberto Méndez
 
 Created on Thu Apr 25 21:40:20 2024
+Editado: Jun/09/24
 """
 import numpy as np
 
 raiz = float(input("Dame el valor del cual quieres la raíz: "))
-aprox = float(input("Da una paroximación: "))
+aprox = float(input("Da una aproximación: "))
 
 
 for x in range(5):
