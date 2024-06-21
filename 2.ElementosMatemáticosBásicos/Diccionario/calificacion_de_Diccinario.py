@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Tema: 
+Tema: Diccionarios y Entorno Gráfico con Tkinter
 
 Referencia: Charatan, Programming in Two Semesters
             pag 220    
             https://python-forum.io/thread-30362.html   
-Created on Wed Jun 19 2024
-
+            
 @author: Roberto Méndez Méndez
+modificado: Wed Jun 21 2024
 """
 
 from tkinter import Tk, Label, Entry
@@ -36,13 +36,12 @@ score.pack(side='bottom', padx= (0,10),pady=(100,5))
 
 # Toma el dato de la entrada después de dar enter
 # e imprime el nombre en consola
-def on_entry(event):
+def mi_entrada(event):
     nombre = entrada.get()
     resultado = calificaciones[nombre]
     score.configure(text = 'Tu calificación es: '+ str(resultado))
-    print(nombre)
 
 # Enlaza el recuadro de entrada con dar Return    
-entrada.bind('<Return>', on_entry)
+entrada.bind('<Return>', mi_entrada)
 
 ventana.mainloop()
